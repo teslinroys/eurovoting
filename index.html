@@ -14,7 +14,7 @@
     function drawGID() {
       var queryString = encodeURIComponent('SELECT AD, AE');
 
-      var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCKy5KpEgsp57-WIgtKrY1JfEVg8xezk9KuvCUhzz2n3drHkw_av0R_cQDaMZGVwvHlMttj6zQv9ZP/gviz/tq?' + queryString);
+      var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCKy5KpEgsp57-WIgtKrY1JfEVg8xezk9KuvCUhzz2n3drHkw_av0R_cQDaMZGVwvHlMttj6zQv9ZP/gviz/tq?gid=0&headers=1&tq=' + queryString);
       query.send(handleQueryResponse);
     }
 
